@@ -21,7 +21,7 @@ class MyApp extends App {
     render() {
         const { Component, pageProps } = this.props;
         return (
-            <Container>
+            <>
                 <CssBaseline />
                 <SCThemePRovider theme={theme}>
                     <MaterialThemeProvider theme={theme}>
@@ -30,7 +30,7 @@ class MyApp extends App {
                         </Page>
                     </MaterialThemeProvider>
                 </SCThemePRovider>
-            </Container>
+            </>
         );
     }
 }
